@@ -1,0 +1,262 @@
+
+.main_c{
+    background-image: url(/static/images/crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+.content{
+    .carousel{
+        .carousel-indicators{
+            // border: 2px solid white;
+            display: flex;
+            justify-content: flex-start;
+            // margin-top: -150px;
+            button{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                
+            }
+        }
+    }
+    .first_row{
+        margin-top: 200px;
+        margin-bottom: 50px;
+        .text{
+            // border: 1px solid white;
+            margin-left: 100px;
+            .single_P{
+                color: white;
+                margin-bottom: 100px;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                letter-spacing: 2px;
+                span{
+                    color: rgb(117, 115, 115);
+                    font-weight: 900;
+                }
+            }
+            h3{
+                text-transform: uppercase;
+                font-weight: 300;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(82, 86, 95);
+            }
+            h1{
+                color: white;
+                font-size: 3em;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .para{
+                color: rgb(120, 125, 145);
+                margin-right: 100px;
+                padding: 10px 10px 10px 0px   ;
+            }
+        }
+        .image{
+            margin-right: 100px;
+            // border: 1px solid white;
+            img{
+                width: 500px;
+                height: 500px;
+                margin-top: 90px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 600px) and (min-width:280px) {
+    .main_c{
+        background-image: url(/static/images/crew/background-crew-mobile.jpg);
+        height: auto;
+        .menu{
+            position: absolute;
+            right: 0;
+            margin: 30px;
+            img{
+                height: 35px;
+                width: 35x;
+            }
+        }
+        .menu_list{
+            z-index: 3;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            background-color: rgb(35, 39, 63);
+            height: 70%;
+            width: 70%;
+            ul{
+                padding-top: 100px;
+                // padding: 15%;
+                li{
+                    list-style: none;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .content{
+            .carousel{
+                .carousel-indicators{
+                    margin-bottom: 350px;
+                    margin-left: 150px;
+                    margin-top: 0px;
+                    button{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;   
+                    }
+                }
+            }
+            .first_row{
+                margin-top: 80px;
+                margin-bottom: 0px;
+                display: flex;
+                flex-direction:column-reverse;
+                .text{
+                    text-align: center;
+                    margin-left: 0px;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    .single_P{
+                        margin-bottom: 10px;
+                        margin-top: 0px;
+                        font-size: 1.5em;
+                        letter-spacing: 2px;
+                        span{
+                            color: rgb(117, 115, 115);
+                            font-weight: 900;
+                        }
+                    }
+                    h3{
+                        font-size: 2.2em;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        color: rgb(82, 86, 95);
+                    }
+                    h1{
+                        color: white;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                    }
+                    .para{
+                        color: rgb(120, 125, 145);
+                        margin-right: 0px;
+                        padding: 10px 10px 10px 0px;
+                    }
+                }
+                .image{
+                    margin-right: 0px;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        margin: 20px;
+                        width: 300px;
+                        height: 300px;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width:650px) {
+    .main_c{
+        background-image: url(/static/images/crew/background-crew-tablet.jpg);
+        height: auto;
+        .content{
+            .carousel{
+                .carousel-indicators{
+                    margin-bottom: 600px;
+                    margin-left: 50px;
+                    margin-top: 0px;
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;   
+                    }
+                }
+            }
+        }
+        .first_row{
+            margin-top: 80px;
+            .text{
+                text-align: center;
+                margin-left: 0px !important;
+                .single_P{
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    font-size: 3em !important;
+                    letter-spacing: 2px;
+                    margin-bottom: 10px !important;
+                    span{
+                        color: rgb(117, 115, 115);
+                        font-weight: 900;
+                    }
+                }
+                h3{
+                    font-size: 3.2em;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color: rgb(82, 86, 95);
+                }
+                h1{
+                    color: white;
+                    font-size: 4em !important;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                .para{
+                    color: rgb(120, 125, 145);
+                    margin-right: 0px !important;
+                    padding: 0px !important;
+                    font-size: 2em;
+                }
+            }
+            .image{
+                margin-right: 0px;
+                display: flex;
+                justify-content: center;
+                img{
+                    margin: 20px;
+                    width: 300px;
+                    height: 300px;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+
+{% extends 'page_layout_dekstop.html' %}
+
+{% block body %}
+<div class="container-fluid main_d">
+    <div class="menu_list" id="menu_list">
+        <ul>
+            <li><a href="/" style="border-bottom: 3.5px solid white;"><span>00</span> Home</a></li>
+            <li><a href="/destination_moon"><span>01</span> Destination</a></li>
+            <li><a href="/crew"><span>02</span> Crew</a></li>
+            <li><a href="/technology"><span>03</span> Technology</a></li>
+        </ul>
+    </div>
+    <div class="container content">
+        <div class="row first_row">
+            <div class="col image">
+                <h1><span>01</span>  Pick your destination</h1>
+                <div class="img">
+                    <img src="/static/images/destination/image-mars.png" alt="">
+                </div>
+            </div>
+            <div class="col text">
+                <div class="list">
+                    <ul>
+                        <li> <a href="/destination_moon">Moon</a></li>
+                        <li> <a style="border-bottom: 3.5px solid white; padding-bottom: 10px;" href="/destination_mars">Mars</a></li>
+                        <li> <a href="/destination_europa">Europa</a></li>
+                        <li> <a href="/destination_titan">Titan</a></li>
+                    </ul>
+                </div>
+                <h6>Mars</h6>
+                <p> Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+                    the tallest planetary mountain in our solar system. It’s two and a half times 
+                    the size of Everest!
+                </p>
+                <hr style="color: white;">
+                <div class="row bottom">
+                    <div class="col distance">
+                        <div class="avg">Avg. distance</div>
+                        <div class="dis">225 MIL. KM</div>
+                    </div>
+                    <div class="col travel">
+                        <div class="time">Est. travel time</div>
+                        <div class="months">9 MONTHS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}  
+
+{% block script %}
+    <script src="{{ url_for('static', filename='/JS/javascript.js') }}"></script>
+{% endblock %}

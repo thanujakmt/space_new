@@ -1,0 +1,277 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'destination';
+@import 'crew';
+@import 'navbar';
+@import 'technology';
+
+@media only screen and (min-width: 1400px) {
+
+nav{
+    .menu{
+        img{
+            display: none;
+        }
+    }
+    .close{
+        img{
+            display: none;
+        }
+    }
+}
+.main_h{
+    background-image: url(/static/images/home_images/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+.content{
+    margin-top: 300px;
+    .text{
+        margin-left: 250px;
+        margin-right: 250px;
+        p{
+            color: white;
+            font-size: 1.8em;
+            font-weight: 100;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1{
+            color: white;
+            font-size: 10em;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .para{
+            font-size: 1.3em;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+    .explore{
+        margin-top: 250px;
+        div{
+        a{
+            text-decoration: none;
+            color: rgb(48, 47, 47);
+            background-color: white;
+            padding: 140px 80px 140px 80px;
+            border-radius: 50%;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+    }
+    }
+}
+}
+}
+@media only screen and (max-width: 600px) and (min-width:280px) {
+    .main_h{
+        position: absolute;
+        top: 0;
+        .menu{
+            position: absolute;
+            right: 0;
+            margin: 30px;
+            img{
+                height: 35px;
+                width: 35x;
+            }
+        }
+        .menu_list{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            background-color: rgb(35, 39, 63);
+            height: 70%;
+            width: 70%;
+            ul{
+            // border: 1px solid white;
+            padding-top: 100px;
+                // padding: 15%;
+                li{
+                    list-style: none;
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        background-image: url(/static/images/home_images/background-home-mobile.jpg);
+        height: 1200px;
+        overflow: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .content{
+            margin-top: 150px;
+            .text{
+                color: white;
+                text-align: center;
+                margin-left: 0px;
+                margin-right: 0px;
+                h1{
+                    font-size: 7em;
+                }
+                p{
+                    font-size: 1.6em;
+                    margin: 10px;
+                }
+            }
+            .explore{
+                margin-top: 250px;
+                div{
+                a{
+                    text-decoration: none;
+                    color: rgb(48, 47, 47);
+                    background-color: white;
+                    padding: 140px 80px 140px 80px;
+                    border-radius: 50%;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                }
+            }
+            }
+        }
+    }
+    nav{
+        // border: 2px solid red;
+        margin: 20px;
+        .logo{
+            height: 50px;
+            width: 50px;
+            
+        }
+        .menu{
+            img{
+                width: 40px;
+                height: 35px;
+            }
+        }
+        ul{
+            display: none;
+        }
+        .line{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) and (min-width:650px) {
+    nav{
+        margin: 20px;
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
+        .menu{
+            img{
+            display: none;
+            }
+        }
+        .line{
+            display: none;
+        }
+        ul{
+            display: flex;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.11);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2.1px);
+            -webkit-backdrop-filter: blur(2.1px);
+            li{
+                list-style: none;
+                padding: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1em;
+                    // font-family: 'Barlow Condensed', sans-serif;
+                    // font-family: 'EB Garamond', serif;
+                    font-family: 'Rubik', sans-serif;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                
+            }
+        }
+    }
+    .main_h{
+        position: absolute;
+        top: 0;
+        background-image: url(/static/images/home_images/background-home-tablet.jpg);
+        height: 1600px;
+        overflow: scroll;
+        background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        .content{
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            .text{
+                text-align: center;
+                margin-left: 0px;
+                margin-right: 0px;
+                color: white;
+                h1{
+                    font-size: 12em;
+                }
+                p{
+                    font-size: 3em;
+                    margin: 10px;
+                }
+                .para{
+                    font-size: 2.5em;
+                }
+            }
+            .explore{
+                margin-top: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div{
+                a{
+                    text-decoration: none;
+                    color: rgb(48, 47, 47);
+                    background-color: white;
+                    padding: 140px 80px 140px 80px;
+                    border-radius: 50%;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                }
+            }
+            }
+        }
+    }
+}
